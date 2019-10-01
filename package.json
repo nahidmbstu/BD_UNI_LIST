@@ -1,6 +1,6 @@
 {
   "name": "bd_unis",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "all BD university json list",
   "main": "index.js",
   "scripts": {
