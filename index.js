@@ -23,11 +23,9 @@ class BD_UNIS {
     return ALL.map(i => i.shortName);
   }
 
-  havePHD() {
-    let uni_name = this.name;
-
+  havePHD(name) {
     const found = ALL.find(function(element) {
-      return element.name === uni_name;
+      return element.name === name;
     });
     if (found == undefined) {
       return false;
@@ -38,19 +36,17 @@ class BD_UNIS {
     }
   }
 
-  findUni() {
-    let uni_name = this.name;
-
+  findUni(name) {
     const found = ALL.find(function(element) {
-      return element.name === uni_name;
+      return element.name === name;
     });
     return found;
   }
 }
 
 // Usage:
-let user = new BD_UNIS();
+// let user = new BD_UNIS();
 
-console.log(user.getNames());
+// console.log(user.findUni("University of Dhaka"));
 
 module.exports = BD_UNIS;

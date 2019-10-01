@@ -2,7 +2,12 @@ const BD_UNIS = require("./index");
 
 let uni = new BD_UNIS();
 
-test("get All Names", () => {
+test("Check PhD ", () => {
+  expect(uni.havePHD("University of Dhaka")).toBe(true);
+});
+
+test("get All Names and ", () => {
+  expect(uni.havePHD("University of Dhaka")).toBe(true);
   expect(uni.getNames()).toEqual([
     "University of Dhaka",
     "University of Rajshahi",

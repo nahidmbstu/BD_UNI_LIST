@@ -18,3 +18,5 @@ getAll() ,getNames() ,getLocation() , getBuildYear() , getshortName() ,havePHD()
 
 
 ```
+
+wrote only two test :(
